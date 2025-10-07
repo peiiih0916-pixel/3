@@ -12,15 +12,48 @@
         .large_font { font-size: 30px;  }
         .large_font:hover {background-color: black; color: lightblue;  }
         .img_circle:hover { opacity:80%; }
+
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+          position: fixed; /* Set the navbar to fixed position */
+          top: 0; /* Position the navbar at the top of the page */
+          width: 100%; /* Full width */
+        }
+
+        /* Links inside the navbar */
+        .navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        /* Change background on mouse-over */
+        .navbar a:hover {
+          background: #ddd;
+          color: black;
+        }
+
+
 	</style>
 </head>
 <body>
+
+  <div class="navbar">
+    <a href="#home">回首頁</a>
+    <a href="#s1">臺中國家歌劇院</a>
+    <a href="#s2">臺中州廳</a>
+    <a href="#s3">審計新村</a>
+</div>
 	
 <div class="container">
     <table>
        	<tr>
     		<td colspan="2">
-    			<div class="large_font">臺中市景點推薦</div><br>
+    			<div id="home" style="padding-top: 60px;" class="large_font">臺中市景點推薦</div><br>
                 <img class="img_rounded_corner" src="00.jpeg">
     	    </td>
     	</tr>
@@ -34,7 +67,7 @@
     	</tr>
     	<tr>
     		<td>
-    			<img class="img_circle" src="01.jpeg">
+    			<img id="s1" class="img_circle" src="01.jpeg">
     		</td>
     		<td>
     			<div class="large_font">臺中國家歌劇院</div><br>
@@ -56,12 +89,12 @@
 
         	</td>
         	<td>
-        		<img class="img_circle" src="02.jpeg">
+        		<img id="s2" class="img_circle" src="02.jpeg">
         	</td>
         </tr>
         <tr>
         	<td>
-        		<img class="img_circle" src="03.jpeg">
+        		<img id="s3" class="img_circle" src="03.jpeg">
         	</td>
         	<td>
         		<div class="large_font">審計新村</div><br>
@@ -72,6 +105,15 @@
                 所在位置：臺中市西區民生路368巷
             </td>
         </tr>
+
+
+        <tr>
+            <td colspan="2">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1EwISwhblnseTEgSmmj04N7lmIkIUqyI&ehbc=2E312F" width="960" height="600"></iframe>
+            </td>
+        </tr>
+
+
         <tr>
         	<td colspan="2">
         		<div style="width: 1024px; height: 50px; Line-height:50px;
